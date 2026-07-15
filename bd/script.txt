@@ -1,0 +1,24 @@
+CREATE DATABASE escolaDB;
+USE escolaDB;
+
+CREATE TABLE professores (
+    id_professor INT AUTO_INCREMENT PRIMARY KEY,
+    nome_professor varchar(100) not null,
+    email_professor varchar(100) not null,
+);
+
+CREATE TABLE materias(
+    id_materia INT AUTO_INCREMENT PRIMARY KEY,
+    nome_materia VARCHAR(100) NOT NULL,
+    id_professor_materias int
+    foreign
+);
+
+
+INSERT INTO cursos(nome)
+VALUES
+('Node JS'),
+('JavaScript'),
+('React Native');
+
+select * from cursos;
