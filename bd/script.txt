@@ -1,24 +1,30 @@
 CREATE DATABASE escolaDB;
 USE escolaDB;
-
+-- drop database escolaDB
 CREATE TABLE professores (
     id_professor INT AUTO_INCREMENT PRIMARY KEY,
-    nome_professor varchar(100) not null,
-    email_professor varchar(100) not null,
+    nome_professor VARCHAR(100) NOT NULL,
+    email_professor VARCHAR(100) NOT NULL
 );
 
-CREATE TABLE materias(
+CREATE TABLE materias (
     id_materia INT AUTO_INCREMENT PRIMARY KEY,
     nome_materia VARCHAR(100) NOT NULL,
-    id_professor_materias int
-    foreign
+    id_professor_materias INT,
+    FOREIGN KEY (id_professor_materias)
+        REFERENCES professores (id_professor)
+        ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 
-INSERT INTO cursos(nome)
+INSERT INTO professores(nome_professor, email_professor)
 VALUES
-('Node JS'),
-('JavaScript'),
-('React Native');
+('Peterson', 'peterson@email.com'),
+('André', 'andre@email.com'),
+('Edimara', 'edimara@email.com');
 
-select * from cursos;
+INSERT INTO materias(nome_materia, id_professor_materias)
+VALUES
+('Programação de Aplicativos', 1),
+('Lógica de Programação', 2),
+('Ciências Humanas', 3);
