@@ -89,20 +89,10 @@ header nav a{
     max-width: 30vw;
 }
 
-.image-with-buttons img{
+.image img{
     width: 100%;
     height: 25vh;
     border-radius: 20px;
-}
-
-.image-with-buttons button{
-    background-color: #96E8FC;
-    border: none;
-    display: block;
-    margin-bottom: 3vh;
-    height: 5vh;
-    width: 100%;
-    border-radius: 8px;
 }
 
 

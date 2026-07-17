@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    object-fit: cover;
+    font-family: 'Nunito', sans-serif;
+}
+
+img{
+    width: 100px;
+}
+
+body{
+    background: #EDECEA;
+}
+
+header{
+    background: #035D74;
+    width: 100vw;
+    height: 6rem;
+    max-height: 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+header h1{
+    color: #EDECEA;
+}
+
+header nav{
+    justify-self: end;
+    
+}
+
+header nav a{
+    text-decoration: none;
+    color: #EDECEA;
+    font-weight: 700;
+    margin-right: 3vw;
+}
+
+.hero-section{
+    justify-self: center;
+}
+
+
+

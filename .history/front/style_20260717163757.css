@@ -98,11 +98,7 @@ header nav a{
 .image-with-buttons button{
     background-color: #96E8FC;
     border: none;
-    display: block;
-    margin-bottom: 3vh;
-    height: 5vh;
-    width: 100%;
-    border-radius: 8px;
+    
 }
 
 

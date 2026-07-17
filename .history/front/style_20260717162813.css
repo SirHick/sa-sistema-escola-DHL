@@ -9,6 +9,7 @@
 
 body{
     background: #EDECEA;
+    
 }
 
 
@@ -72,7 +73,7 @@ header nav a{
     margin-bottom: 3vh;
     color: #035D74;
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 10vh;
     font-size: 2rem;
     max-width: 60vw;
     justify-self: center;
@@ -81,28 +82,15 @@ header nav a{
 
 /* ESTILIZAÇÃO PARA A PÁGINA DOS PROFESSORES*/
 
-.image-with-buttons{
+.image{
+    justify-self: center;
     background-color: #035D74;
     margin-top: 10vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
     border-radius:12px;
     padding: 30px;
-    max-width: 30vw;
-}
-
-.image-with-buttons img{
-    width: 100%;
-    height: 25vh;
-    border-radius: 20px;
-}
-
-.image-with-buttons button{
-    background-color: #96E8FC;
-    border: none;
-    display: block;
-    margin-bottom: 3vh;
-    height: 5vh;
-    width: 100%;
-    border-radius: 8px;
 }
 
 
